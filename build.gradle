@@ -10,7 +10,7 @@ repositories {
 
 def allureVersion = "2.19.0",
     selenideVersion = "6.5.2",
-    appiumVersion = "8.0.0",
+    appiumVersion = "7.0.0",
     commonsIoVersion = "2.11.0",
     assertJVersion = "3.23.1",
     slf4jVersion = "1.7.32"
