@@ -1,7 +1,9 @@
 package tests;
 
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.Selenide;
 import drivers.BrowserstackMobileDriver;
+//import helpers.Attach;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -27,6 +29,11 @@ public class TestBase {
 
     @AfterEach
     public void tearDown() {
+        String sessionId = Selenide.sessionId().toString();
+        System.out.println(sessionId);
+       // Attach.screenshotAs("Last screenshot");
+       // Attach.pageSource();
+        //Attach.video();
         closeWebDriver(); //attach
     }
 }

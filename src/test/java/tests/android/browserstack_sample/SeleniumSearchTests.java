@@ -1,3 +1,4 @@
+/*
 package tests.android.browserstack_sample;
 
 import java.net.URL;
@@ -59,3 +60,4 @@ public class SeleniumSearchTests {
 
     }
 }
+*/

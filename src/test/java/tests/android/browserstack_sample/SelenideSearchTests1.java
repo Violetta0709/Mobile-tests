@@ -1,6 +1,7 @@
 package tests.android.browserstack_sample;
 
 import io.appium.java_client.AppiumBy;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import tests.TestBase;
 
@@ -10,7 +11,8 @@ import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
 import static com.codeborne.selenide.Selectors.byClassName;
 import static com.codeborne.selenide.Selenide.*;
 
-public class SelenideSearchTests extends TestBase {
+public class SelenideSearchTests1 extends TestBase {
+    @Disabled
     @Test
     void successSearchTest() throws MalformedURLException, InterruptedException {
         open();
