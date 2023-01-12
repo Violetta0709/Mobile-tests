@@ -37,5 +37,5 @@ public class BrowserstackMobileDriver implements WebDriverProvider {
         // Initialise the remote Webdriver using BrowserStack remote URL
         // and desired capabilities defined above
         return new RemoteWebDriver(new URL("http://hub.browserstack.com/wd/hub"), mutableCapabilities);
-            }
+    }
 }
