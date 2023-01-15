@@ -1,4 +1,4 @@
-# Automated tests of Wikipedia app
+# <img width="5%" title="Wikipedia" src="images/Wikipedia.png"> Automated tests of Wikipedia mobile app
 
 ##	Content
 
