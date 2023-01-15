@@ -1,6 +1,6 @@
 # Project of test automation of Wikipedia app
 
-##	Содержание
+##	Content
 
 - [Tools and technologies](#technologist-технологии-и-инструменты)
 - [Implemented tests](#bookmark_tabs-реализованные-проверки)
