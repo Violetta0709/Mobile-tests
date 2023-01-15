@@ -30,7 +30,7 @@
 
 - Successfull serch of an article in app 
 - Verify page conten with required parameters 
-- Checking 4 pages content(onBoarding screen)
+- Checking 4 pages content (onBoarding screen)
 
 ## Test launching with terminal
 
@@ -67,18 +67,14 @@ After test run block <code><strong>*История сборок*</strong></code>
 ## <img width="4%" title="Browserstack" src="images/Browserstack.svg"> Example of test launching with Browserstack
 
 Each test has text logs, network logs, app profiling, issues detected and video of test implemenrtation.
-App profiling with information about CPU, memory, battery
+App profiling with information about CPU, memory, battery:
 
 <p align="left">
   <img title="Browserstacklogs" src="images/Browserstacklogs.jpg" width ="800">
 </p>
 
-
 Test implementation video (verifying page content with required parameters):
-
 
 <p align="left">
   <img title="Browserstack Video" src="images/mobiletests.gif">
 </p>
-
-
