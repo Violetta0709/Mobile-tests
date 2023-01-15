@@ -1,4 +1,4 @@
-package tests.android.browserstack_sample;
+package tests.android.browserstack;
 
 import com.codeborne.selenide.CollectionCondition;
 import io.appium.java_client.AppiumBy;

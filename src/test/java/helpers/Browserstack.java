@@ -7,7 +7,6 @@ import static io.restassured.RestAssured.given;
 import static java.lang.String.format;
 
 public class Browserstack {
-    //curl -u "username:password" -X GET "https://api.browserstack.com/app-automate/sessions/9469a70fec5a2d569b609b3e2e36fd3e59d5c478.json"
 
     static BrowserstackConfig config = ConfigFactory.create(BrowserstackConfig.class);
 
