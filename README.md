@@ -48,20 +48,20 @@ gradle clean test
 -DdeviceHost=local
 ```
 
-## <img width="4%" title="Jenkins" src="images/Jenkins.svg"> Запуск тестов в [Jenkins](https://jenkins.autotests.cloud/job/tmaksyutov_diplom_mobile/)
+## <img width="4%" title="Jenkins" src="images/Jenkins.svg"> Запуск тестов в [Jenkins](https://jenkins.autotests.cloud/job/mobile_hw/)
 
 To launch test click button <code><strong>*Собрать*</strong></code>.
 
-<p align="center">
-  <img src="images/screenshot/jenkins.png" alt="Jenkins" width="800">
+<p align="left">
+  <img src="images/mobilejenkins.jpg" alt="Jenkins" width="800">
 </p>
 
 After test run block <code><strong>*История сборок*</strong></code> will have logo *Allure Report*, after clicking on it page with html-report open.
 
-## <img width="4%" title="Allure Report" src="images/Allure.svg"> Tests reault report with [Allure Report](https://jenkins.autotests.cloud/job/tmaksyutov_diplom_mobile/allure/)
+## <img width="4%" title="Allure Report" src="images/Allure.svg"> Tests reault report with [Allure Report](https://jenkins.autotests.cloud/job/mobile_hw/allure/)
 
-<p align="center">
-  <img src="images/screenshot/allure-report.png" alt="allure-report1" width="900">
+<p align="left">
+  <img src="images/mobileaallure.jpg" alt="allure-report1" width="800">
 </p>
 
 
