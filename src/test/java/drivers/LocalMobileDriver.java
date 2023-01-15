@@ -1,14 +1,11 @@
 package drivers;
 
 import com.codeborne.selenide.WebDriverProvider;
-import config.BrowserstackConfig;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
-import lombok.SneakyThrows;
-import org.aeonbits.owner.ConfigFactory;
+import io.appium.java_client.remote.AutomationName;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.io.File;
 import java.io.IOException;
@@ -16,11 +13,9 @@ import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-import static io.appium.java_client.remote.AutomationName.ANDROID_UIAUTOMATOR2;
 import static org.apache.commons.io.FileUtils.copyInputStreamToFile;
 
-public class MobileDriver implements WebDriverProvider {
-    static BrowserstackConfig config = ConfigFactory.create(BrowserstackConfig.class, System.getProperties());
+public class LocalMobileDriver implements WebDriverProvider {
 
     public static URL getAppiumServerUrl() {
         try {
@@ -30,34 +25,37 @@ public class MobileDriver implements WebDriverProvider {
         }
     }
 
-    @SneakyThrows
     @Override
     public WebDriver createDriver(Capabilities capabilities) {
+        File app = getApp();
+
         UiAutomator2Options options = new UiAutomator2Options();
         options.merge(capabilities);
+        options.setAutomationName(AutomationName.ANDROID_UIAUTOMATOR2);
+        options.setPlatformName("Android");
+        options.setDeviceName("Pixel 4 API 30");
+        options.setPlatformVersion("11.0");
+        options.setApp(app.getAbsolutePath());
+        options.setAppPackage("org.wikipedia.alpha");
+        options.setAppActivity("org.wikipedia.main.MainActivity");
 
-        options.setAutomationName(ANDROID_UIAUTOMATOR2)
-                .setPlatformName("android")
-                .setDeviceName("Pixel 4 API 30")
-                .setPlatformVersion("11.0")
-                .setApp(getAppPath())
-                .setAppPackage("org.wikipedia.alpha")
-                .setAppActivity("org.wikipedia.main.MainActivity");
         return new AndroidDriver(getAppiumServerUrl(), options);
     }
-    private String getAppPath() {
-        String appUrl = "https://github.com/wikimedia/apps-android-wikipedia/"+
+
+    private File getApp() {
+        String appUrl = "https://github.com/wikimedia/apps-android-wikipedia/" +
                 "releases/download/latest/app-alpha-universal-release.apk";
         String appPath = "src/test/resources/apps/app-alpha-universal-release.apk";
 
         File app = new File(appPath);
-        if(!app.exists()) {
-            try(InputStream in = new URL(appUrl).openStream()) {
-                copyInputStreamToFile(in,app);
-            }catch(IOException e) {
-                throw new AssertionError("Failed to download application",e);
+        if (!app.exists()) {
+            try (InputStream in = new URL(appUrl).openStream()) {
+                copyInputStreamToFile(in, app);
+            } catch (IOException e) {
+                throw new AssertionError("Failed to download application", e);
             }
         }
-        return app.getAbsolutePath();
+        return app;
     }
+
 }

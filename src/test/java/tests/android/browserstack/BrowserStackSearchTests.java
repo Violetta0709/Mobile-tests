@@ -11,7 +11,7 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
-public class SelenideSearchTests extends TestBase {
+public class BrowserStackSearchTests extends TestBase {
 
     @DisplayName("Successfull search")
     @Owner("Veta Iuzykhovich")

@@ -33,5 +33,4 @@ public interface BrowserstackConfig extends Config {
 
     @Key("baseUrl")
     String baseUrl();
-
 }

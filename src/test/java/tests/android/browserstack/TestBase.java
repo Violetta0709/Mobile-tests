@@ -1,14 +1,12 @@
 package tests.android.browserstack;
 
 import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.Selenide;
 import drivers.BrowserstackMobileDriver;
-//import helpers.Attach;
 import helpers.Attach;
+import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
-import io.qameta.allure.selenide.AllureSelenide;
 
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.logevents.SelenideLogger.addListener;
