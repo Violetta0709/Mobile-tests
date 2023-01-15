@@ -26,8 +26,42 @@
 
 </p>
 
-## Implemented test:
+## Implemented tests:
 
 - Successfull serch of an article in app 
 - Verify page conten with required parameters 
 - Checking 4 pages content(onBoarding screen)
+
+## Test launching with terminal
+
+### Remote test launching
+
+```bash
+gradle clean test 
+-DdeviceHost=remote
+```
+
+### Local test launching
+
+```bash
+gradle clean test
+-DdeviceHost=local
+```
+
+## <img width="4%" title="Jenkins" src="images/Jenkins.svg"> Запуск тестов в [Jenkins](https://jenkins.autotests.cloud/job/tmaksyutov_diplom_mobile/)
+
+To launch test click button <code><strong>*Собрать*</strong></code>.
+
+<p align="center">
+  <img src="images/screenshot/jenkins.png" alt="Jenkins" width="800">
+</p>
+
+After test run block <code><strong>*История сборок*</strong></code> will have logo *Allure Report*, after clicking on it page with html-report open.
+
+## <img width="4%" title="Allure Report" src="images/Allure.svg"> Tests reault report with [Allure Report](https://jenkins.autotests.cloud/job/tmaksyutov_diplom_mobile/allure/)
+
+<p align="center">
+  <img src="images/screenshot/allure-report.png" alt="allure-report1" width="900">
+</p>
+
+
