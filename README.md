@@ -64,4 +64,21 @@ After test run block <code><strong>*История сборок*</strong></code>
   <img src="images/mobileaallure.jpg" alt="allure-report1" width="800">
 </p>
 
+## <img width="4%" title="Browserstack" src="images/Browserstack.svg"> Example of test launching with Browserstack
+
+Each test has text logs, network logs, app profiling, issues detected and video of test implemenrtation.
+App profiling with information about CPU, memory, battery
+
+<p align="left">
+  <img title="Browserstacklogs" src="images/Browserstacklong.jpg">
+</p>
+
+
+Test implementation video (verifying page content with required parameters):
+
+
+<p align="left">
+  <img title="Browserstack Video" src="images/mobiletest.gif">
+</p>
+
 
