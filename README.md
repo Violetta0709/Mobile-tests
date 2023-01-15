@@ -70,7 +70,7 @@ Each test has text logs, network logs, app profiling, issues detected and video 
 App profiling with information about CPU, memory, battery
 
 <p align="left">
-  <img title="Browserstacklogs" src="images/Browserstacklong.jpg">
+  <img title="Browserstacklogs" src="images/Browserstacklogs.jpg" width ="800">
 </p>
 
 
@@ -78,7 +78,7 @@ Test implementation video (verifying page content with required parameters):
 
 
 <p align="left">
-  <img title="Browserstack Video" src="images/mobiletest.gif">
+  <img title="Browserstack Video" src="images/mobiletests.gif">
 </p>
 
 
